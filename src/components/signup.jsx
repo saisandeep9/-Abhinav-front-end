@@ -27,7 +27,6 @@ class Signup extends Validation {
     // console.log(this.state.data);
     const success = await userService.register(this.state.data);
     if (success) {
-      // window.location = "/signup";
       this.props.history.push("/");
     }
   };

@@ -25,7 +25,6 @@ class Login extends Validation {
     const success = await auth.login(data);
     console.log("data", success);
     if (success) {
-      // this.props.history.push("/home");
       window.location = "/home";
     }
   };
